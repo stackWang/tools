@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2023-08-28T10:36:52.859Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="B4G4vkQcLPjgNiyFiQAi" version="21.6.6" type="github">
+  <diagram name="第 1 页" id="PRzCCx1aB5qB2nfrL7k8">
+    <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OY2slUrKzZz815CNf_D2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OY2slUrKzZz815CNf_D2-1" target="OY2slUrKzZz815CNf_D2-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;创建&lt;/font&gt;&lt;/b&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;资源&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Aws后台创建Sqs队列&lt;br&gt;1.配置消息区域（3个大区）&lt;br&gt;2.消息生产者（亚马逊root）&lt;br&gt;3.消息消费者（开发者账号）" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="70" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OY2slUrKzZz815CNf_D2-3" target="OY2slUrKzZz815CNf_D2-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-3" value="&lt;h4 style=&quot;border-color: var(--border-color); box-sizing: border-box; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &amp;quot;Microsoft Yahei&amp;quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; font-size: 14px;&quot;&gt;绑定资源（维度:业务+区域）&lt;/h4&gt;&lt;h4 style=&quot;border-color: var(--border-color); box-sizing: border-box; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &amp;quot;Microsoft Yahei&amp;quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;调用createDestination接口，返回destinationId&lt;/span&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="250" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OY2slUrKzZz815CNf_D2-4" target="OY2slUrKzZz815CNf_D2-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-4" value="&lt;h4 style=&quot;border-color: var(--border-color); box-sizing: border-box; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &amp;quot;Microsoft Yahei&amp;quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; font-size: 14px;&quot;&gt;绑定卖家账号(卖家维度)&lt;/h4&gt;&lt;h4 style=&quot;border-color: var(--border-color); box-sizing: border-box; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &amp;quot;Microsoft Yahei&amp;quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;循环亚马逊账号调用createSubscription接口&lt;/span&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="430" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-7" value="&lt;h1&gt;Tips&lt;/h1&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &amp;quot;Microsoft Yahei&amp;quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; font-size: 14px;&quot;&gt;为了正确处理通知，您需要了解 Amazon SQS 队列的几个重要属性：&lt;/p&gt;&lt;ul style=&quot;box-sizing: border-box; margin: 0px 0px 0px 2px; padding: 0px 0px 0px 20px; list-style-position: initial; list-style-image: initial; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &amp;quot;Microsoft Yahei&amp;quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; font-size: 14px;&quot;&gt;&lt;li style=&quot;box-sizing: border-box; margin-bottom: 10px;&quot;&gt;SP-API 不支持分发到 FIFO 队列。您必须使用 Amazon SQS 标准队列来接收通知。&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin-bottom: 10px;&quot;&gt;SP-API 标准队列不保证将按照发送顺序接收通知。标准队列提供尽力而为的排序，这意味着通知通常以与发送时相同的顺序传递。但是，有时多份通知的副本可能会乱序传送。因此，您需要将您的应用程序设计为以任何顺序接受通知。&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin-bottom: 0px;&quot;&gt;Amazon SQS 标准队列通知可能会发送多次。Amazon SQS 将通知副本存储在多台服务器上，以实现冗余和高可用性。在极少数情况下，当您收到或删除通知时，其中一个存储通知副本的服务器可能不可用。如果发生这种情况，通知副本不会在该不可用服务器上删除，并且您可能会在收到通知时再次获得该通知副本。因此，您需要将您的应用程序设计为接受任何给定通知的多个副本。&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="10" y="585" width="270" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Sqs配置步骤&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="20" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OY2slUrKzZz815CNf_D2-9" value="&lt;h4 style=&quot;border-color: var(--border-color); box-sizing: border-box; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &amp;quot;Microsoft Yahei&amp;quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; font-size: 14px;&quot;&gt;程序接收&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;bus-amazon中代码接收&lt;/span&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="620" width="200" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
