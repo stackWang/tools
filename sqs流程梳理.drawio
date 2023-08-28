@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2023-08-28T06:30:18.767Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="z8Rp0-Izy2Sc7Y-10OwU" version="21.6.6" type="github">
+  <diagram name="第 1 页" id="zvosv2-qI-nX_kA9H8hk">
+    <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="awAZ1icY4GVt91-FRP6n-4" value="亚马逊listing状态变更事件" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="290" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-5" value="创建listing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-4">
+          <mxGeometry x="20" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-6" value="删除listing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-4">
+          <mxGeometry x="110" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-7" value="下架listing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-4">
+          <mxGeometry x="200" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-8" value="event" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-4">
+          <mxGeometry x="80" y="120" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-9" value="event" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-4">
+          <mxGeometry x="170" y="120" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-10" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="awAZ1icY4GVt91-FRP6n-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="240" as="sourcePoint" />
+            <mxPoint x="90" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-13" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="awAZ1icY4GVt91-FRP6n-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="240" as="sourcePoint" />
+            <mxPoint x="90" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-11" value="&amp;nbsp;EventBridge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" source="awAZ1icY4GVt91-FRP6n-16" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="240" as="sourcePoint" />
+            <mxPoint x="230" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" target="awAZ1icY4GVt91-FRP6n-16" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="240" as="sourcePoint" />
+            <mxPoint x="230" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-16" value="Sqs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-18" value="Bus-amazon" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="410" width="420" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="awAZ1icY4GVt91-FRP6n-18" source="awAZ1icY4GVt91-FRP6n-19" target="awAZ1icY4GVt91-FRP6n-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-19" value="event" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-18">
+          <mxGeometry x="110" y="30" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="awAZ1icY4GVt91-FRP6n-18" source="awAZ1icY4GVt91-FRP6n-20" target="awAZ1icY4GVt91-FRP6n-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-20" value="Mongo" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-18">
+          <mxGeometry x="105" y="125" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="awAZ1icY4GVt91-FRP6n-22" value="根据事件的(marketplaceId +&amp;nbsp;subscriptionId)查找关联的" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="awAZ1icY4GVt91-FRP6n-18">
+          <mxGeometry x="80" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
